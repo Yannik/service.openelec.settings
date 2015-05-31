@@ -34,6 +34,7 @@ import os
 XBMC_USER_HOME = os.environ.get('XBMC_USER_HOME', '/storage/.kodi')
 CONFIG_CACHE = os.environ.get('CONFIG_CACHE', '/storage/.cache')
 USER_CONFIG = os.environ.get('USER_CONFIG', '/storage/.config')
+SSH_KEYS = os.environ.get('SSH_KEYS', '/storage/.ssh')
 
 ################################################################################
 # Connamn Module
@@ -95,6 +96,7 @@ system = {
         XBMC_USER_HOME,
         USER_CONFIG,
         CONFIG_CACHE,
+        SSH_KEYS,
         ],
     'BACKUP_DESTINATION': '/storage/backup/',
     'RESTORE_DIR': '/storage/.restore/',
